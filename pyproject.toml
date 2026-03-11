@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+name = "flask-todo-app"
+version = "0.1.0"
+description = "A simple todo list web application built with Flask and SQLite"
+readme = "README.md"
+
+[tool.setuptools.dependencies]
+flask
+
+[tool.setuptools.optional-dependencies]
+
+[tool.black]
+line-length = 88
+target-version = ["py37", "py38", "py39", "py310"]
+
+[tool.ruff]
+line-length = 88
